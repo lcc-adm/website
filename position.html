@@ -17,24 +17,24 @@ div {
 }
 #sticky {
   background: pink;
-  position: sticky;
+  position: sticky; /* scrolls until hits edge */
 }
 #relative {
   background: yellow;
-  position: relative;
+  position: relative; /* can move out of place but leaves hole */
   left: 100px;
   top: -100px;
   z-index: -5;
 }
 #fixed {
   background: #beeb5d;
-  position: fixed;
+  position: fixed; /* sticks to screen, not scroll and removes hole */
   left: 200px;
   top: 0;
 }
 #absolute {
   background: #c5a3e7;
-  position: absolute;
+  position: absolute; /* sticks to scroll and removes hole */
   left: 300px;
   bottom: -300px;
 }
