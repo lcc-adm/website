@@ -12,31 +12,31 @@ div {
   margin: 50px;
 }
 #static {
-  background: orange;
-  position: static; /* default */
+  background: red;
+  position: static;  /* default position */
 }
 #sticky {
-  background: pink;
-  position: sticky; /* scrolls until hits edge */
+  background: orange;
+  position: sticky; /* static until hits edge */
 }
 #relative {
   background: yellow;
-  position: relative; /* can move out of place but leaves hole */
+  position: relative; /* moves box but leaves hole */
   left: 100px;
   top: -100px;
-  z-index: -5;
+  z-index: -10;
 }
 #fixed {
-  background: #beeb5d;
-  position: fixed; /* sticks to screen, not scroll and removes hole */
-  left: 200px;
-  top: 0;
+  background: greenyellow;
+  position: fixed; /* stuck to screen, leaves no hole */
+  top: 50px;
+  right: 50px;
 }
 #absolute {
-  background: #c5a3e7;
-  position: absolute; /* sticks to scroll and removes hole */
-  left: 300px;
-  bottom: -300px;
+  background: lightskyblue;
+  position: absolute; /* stuck to content, no hole */
+  right: 30px;
+  bottom: 50px;
 }
   </style>
 </head>
